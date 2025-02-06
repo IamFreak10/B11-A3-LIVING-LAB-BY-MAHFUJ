@@ -12,6 +12,13 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awsome -->
+    <script
+      src="https://kit.fontawesome.com/9f027279bb.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Importing Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,10 +48,116 @@
   </head>
   <body class="adlam-display">
     <!-- This Is Header Part -->
+    <header class="md:container mx-auto">
+      <nav class="hidden lg:inline">
+        <div class="navbar bg-[#FFF9F4] px-20">
+          <div class="navbar-start">
+            <div class="w-[48px] h-[48px]">
+              <img
+                class="w-full h-full object-contain"
+                src="c1-assets/logo-header.png"
+                alt=""
+              />
+            </div>
 
-    <header></header>
+            <div class="hidden lg:flex md:flex">
+              <a class="text-xl"
+                >Browse<span class="text-orange-400">4</span>Pets</a
+              >
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Find a pet</a></li>
+              <li>
+                <a>Breeds</a>
+              </li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="hidden lg:flex px-11 navbar-end gap-1">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button
+              class="btn btn-xs text-black font-normal btn-outline border border-yellow-300"
+            >
+              Login
+            </button>
+            <button class="btn btn-xs text-black font-normal bg-[#FFDC26]">
+              Register
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Small Device Nav -->
+      <nav
+        class="flex justify-between items-center px-10 h-16 w-full lg:hidden bg-[#FFF9F4]"
+      >
+        <!-- logo -->
+        <div class="w-[48px] h-[48px]">
+          <img
+            class="w-full h-full object-contain"
+            src="c1-assets/logo-header.png"
+            alt=""
+          />
+        </div>
+        <!-- Dropdown -->
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-auto p-2 shadow"
+          >
+            <li><a>Find A Pet </a></li>
+            <li>
+              <a>Breeds</a>
+            </li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <!-- This Is main part -->
-    <main></main>
+    <main class="mx-5 lg:mx-24 my-12">
+      <!-- Cat Section -->
+
+      <section>
+        <!-- Text -->
+        <div class="">
+          <h1 class="text-2xl lg:text-5xl">
+            Pamper Your Pet,<br />
+            Because They Deserve <br />the Best
+          </h1>
+          <p class="text-sm lg:text-xs text-gray-500 my-5">
+            Discover a world of treats, toys, and essentials handpicked for
+            <br />
+            your furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="btn btn-xs text-black font-normal bg-[#FFDC26]">
+            Find a pet
+          </button>
+        </div>
+        <!-- Image -->
+        <div class="">
+          <img src="c1-assets/cat-big.png" alt="" />
+        </div>
+      </section>
+    </main>
     <!-- This Footer part -->
     <footer></footer>
   </body>
